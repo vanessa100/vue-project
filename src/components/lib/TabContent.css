@@ -1,0 +1,29 @@
+.contentwrap {
+    margin: 10px;
+
+    background-color: white;
+    border-radius: 10px 10px 10px 10px / 15px 15px 15px 15px;
+
+}
+
+.tab {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    height: 30px;
+    text-align: center;
+}
+
+.tab-other {
+    flex: auto;
+    padding: 5px;  
+    background-color:#ccc;
+    border: 1px solid #ccc;   
+}
+
+.tab-current {
+    flex: auto;
+    padding: 5px;
+    border: 1px solid white;
+    background-color:white;
+}
