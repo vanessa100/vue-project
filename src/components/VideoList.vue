@@ -9,9 +9,17 @@
         <span class="video-item__title--normal">{{ item.name }}</span>
         <br />
         <span class="video-item__title--small">
-          size：{{ item.size }}{{ item.unit }}</span>
+          size：{{ item.size }}{{ item.unit }}</span
+        >
       </div>
-      <img alt="d" src="../assets/trash.svg" class="video-item__icon" v-if="item.showIcon" />
+      <img
+        alt="delete"
+        src="../assets/trash.svg"
+        class="video-item__icon"
+        v-if="item.showIcon"
+        slot="actions"
+        @click="delItem(item.id)"
+      />
     </div>
   </div>
 </template>
@@ -26,6 +34,11 @@ export default {
     };
   },
 
+  methods: {
+    delItem(id) {
+      this.$store.commit("delItem", id);
+    },
+  },
 };
 </script>
 
