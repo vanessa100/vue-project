@@ -1,0 +1,58 @@
+.tab-container {
+  margin: 10px;
+  background-color: white;
+  border-radius: 10px 10px 10px 10px / 15px 15px 15px 15px;
+  overflow: hidden;
+}
+
+.tab-head {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  height: 40px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.dot {
+  display: inline-block;
+  min-width: 5px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  color: white;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  background-color: rgb(194, 45, 45);
+  border-radius: 10px}
+
+.tab-head--other {
+  flex: auto;
+  background-color:#ccc;
+  line-height: 40px;     
+}
+
+.tab-head--current {
+  flex: auto;
+  background-color:white;
+  line-height: 40px;
+}
+
+.tab-content--current {
+  margin: 1px;
+  background-color: white;
+  box-shadow: inset 0px 1px 5px #ccc;
+}
+
+.tab-content--other {
+  margin: 1px;
+  background-color: white;
+  box-shadow: inset 0px 1px 5px #ccc;
+}
+
+.tab-footer {
+  text-align: center; 
+  padding: 10px;
+}

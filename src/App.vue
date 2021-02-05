@@ -1,18 +1,18 @@
 <template>
   <div class="container">
-    <tab-content></tab-content>
+    <tab-container></tab-container>
   </div>
 </template>
 
 <script>
-import TabContent from "./components/TabContent";
+import TabContainer from './components/TabContainer.vue';
+
 
 export default {
   components: {
-    "tab-content": TabContent,
+    "tab-container": TabContainer,
   },
 
-  methods: {},
 };
 </script>
 
