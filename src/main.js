@@ -16,7 +16,7 @@ var store = new Vuex.Store({
     ],
   },
   mutations: {
-    delItem(state, id) {
+    DEL_ITEM(state, id) {
       const index = state.videos.findIndex(item => item.id === id)
       if (index !== -1) {
         state.videos.splice(index, 1)

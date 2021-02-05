@@ -36,7 +36,7 @@ export default {
 
   methods: {
     delItem(id) {
-      this.$store.commit("delItem", id);
+      this.$store.commit("DEL_ITEM", id);
     },
   },
 };
