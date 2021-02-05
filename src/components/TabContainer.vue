@@ -26,14 +26,15 @@
 import "./lib/TabContainer.css";
 import VideoList from "./VideoList";
 import UploadDrag from "./UploadDrag.vue";
-
+// import store from '../store';
 
 export default {
   data() {
     return {
       showTab: true,
       cur: 0,
-      count: this.$store.state.count,
+      // count: store.state.count,
+      count: 2,
     };
   },
 

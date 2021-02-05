@@ -6,12 +6,13 @@
 
 <script>
 import TabContainer from './components/TabContainer.vue';
-
+import store from './store';
 
 export default {
   components: {
     "tab-container": TabContainer,
   },
+  store
 
 };
 </script>

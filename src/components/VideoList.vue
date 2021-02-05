@@ -31,16 +31,17 @@
 <script>
 import "./lib/VideoList.css";
 import InfiniteLoading from "vue-infinite-loading";
+import store from '../store';
 export default {
   data() {
     return {
-      videos: this.$store.state.videos,
+      videos: store.state.videos,
     };
   },
 
   methods: {
     delItem(id) {
-      this.$store.commit("DEL_ITEM", id);
+      store.commit("DEL_ITEM", id);
     },
     infiniteHandler($state) {
       setTimeout(() => {
@@ -48,6 +49,8 @@ export default {
         $state.complete();
       }, 1000);
     },
+
+    store
   },
 
   components: {
