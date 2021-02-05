@@ -13,7 +13,13 @@ var store = new Vuex.Store({
       { id: 6, name: "Video name 6", size: 18, unit: "MB", used: false, img_url: null, showIcon: false },
       { id: 7, name: "Video name 7", size: 18, unit: "MB", used: false, img_url: null, showIcon: false },
       { id: 8, name: "Video name 8", size: 18, unit: "MB", used: false, img_url: null, showIcon: false },
+      { id: 9, name: "Video name 9", size: 18, unit: "MB", used: false, img_url: null, showIcon: false },
+      { id: 10, name: "Video name 10", size: 18, unit: "MB", used: false, img_url: null, showIcon: false },
+      { id: 11, name: "Video name 11", size: 18, unit: "MB", used: false, img_url: null, showIcon: false },
+
     ],
+
+    count: 2,
   },
   mutations: {
     DEL_ITEM(state, id) {

@@ -20,6 +20,7 @@ export default {
 .container {
   background-color: grey;
   padding: 10px;
+  height: 600px;
 }
 </style>
 

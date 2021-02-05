@@ -21,12 +21,16 @@
         @click="delItem(item.id)"
       />
     </div>
+    <infinite-loading @infinite="infiniteHandler">
+      <span slot="no-more"> There is no more Videos. </span>
+    </infinite-loading>
   </div>
 </template>
 
 
 <script>
 import "./lib/VideoList.css";
+import InfiniteLoading from "vue-infinite-loading";
 export default {
   data() {
     return {
@@ -38,6 +42,16 @@ export default {
     delItem(id) {
       this.$store.commit("DEL_ITEM", id);
     },
+    infiniteHandler($state) {
+      setTimeout(() => {
+        $state.loaded();
+        $state.complete();
+      }, 1000);
+    },
+  },
+
+  components: {
+    InfiniteLoading,
   },
 };
 </script>

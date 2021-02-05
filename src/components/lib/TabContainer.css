@@ -6,12 +6,21 @@
 }
 
 .tab-head {
-  display: flex;
-  justify-content: space-evenly;
-  position: relative;
-  height: 40px;
-  text-align: center;
   cursor: pointer;
+  background-color: #ccc;
+  height: 40px;
+}
+
+.tab-head div {
+  float: left;
+  width: 50%;
+  padding: 10px 0;
+  text-align: center;
+  height: 40px;
+}
+
+.tab-head .active {
+  background-color:white;
 }
 
 .dot {
@@ -28,25 +37,7 @@
   background-color: rgb(194, 45, 45);
   border-radius: 10px}
 
-.tab-head--other {
-  flex: auto;
-  background-color:#ccc;
-  line-height: 40px;     
-}
-
-.tab-head--current {
-  flex: auto;
-  background-color:white;
-  line-height: 40px;
-}
-
-.tab-content--current {
-  margin: 1px;
-  background-color: white;
-  box-shadow: inset 0px 1px 5px #ccc;
-}
-
-.tab-content--other {
+.tab-content {
   margin: 1px;
   background-color: white;
   box-shadow: inset 0px 1px 5px #ccc;
